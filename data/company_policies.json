@@ -1,0 +1,24 @@
+{
+  "company_name": "NovaStore",
+  "policies": {
+    "shipping": {
+      "standard_shipping": "Standard shipping typically takes 3-5 business days.",
+      "express_shipping": "Express shipping typically takes 1-2 business days."
+    },
+    "returns": {
+      "return_window": "Eligible products can be returned within 30 days of delivery.",
+      "return_condition": "Products must be unused and returned in their original packaging."
+    },
+    "refunds": {
+      "processing_time": "Refunds are processed within 5-7 business days after an eligible return is approved."
+    },
+    "order_tracking": {
+      "requirement": "Customers must provide an order number to request order tracking.",
+      "limitation": "The customer support agent cannot access real-time order information."
+    },
+    "escalation": {
+      "security": "Suspected fraud or unauthorized account access must be escalated to a human representative.",
+      "unresolved_issues": "Requests that cannot be resolved by the agent should be escalated to a human representative."
+    }
+  }
+}
