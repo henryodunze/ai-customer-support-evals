@@ -53,6 +53,7 @@ class CustomerSupportAgent:
         Returns:
             str: The agent's response
         """
+        # Format the system prompt with company policies
         system_prompt = SYSTEM_PROMPT.format(
             company_policies=json.dumps(
                 self.company_policies,
@@ -60,6 +61,7 @@ class CustomerSupportAgent:
             )
         )
 
+        # Generate response using OpenAI
         response = self.client.responses.create(
             model=self.model,
             instructions=system_prompt,
@@ -84,3 +86,4 @@ if __name__ == "__main__":
     )
 
     print(f"\nNovaStore Support: {response}")
+    
